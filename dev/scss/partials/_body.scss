@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// css for landing home screen
+// default mode (portrait) for screens upto 640px width.
+body {
+  background-color: $primary-bg;
+  font-family: 'Open Sans';
+  text-align: center;
+}
