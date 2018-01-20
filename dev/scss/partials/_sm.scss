@@ -1,0 +1,35 @@
+@media only screen and (min-width: 40em) and (orientation: landscape) {
+    header {
+        height: 7.5vh;
+        a {
+            padding: 1.5vh;
+            font-size: 7vh;
+        }
+    }
+    .hero-section {
+        .hero-bg {
+            background-position: 52% center;
+        }
+        .hero-content {
+            .hero-header {
+                margin-top: 40vh;
+                p {
+                    font-size: 5vh;
+                    span {
+                        font-size: 8vh;
+                    }
+                }
+            }
+            .btn-grp {
+                justify-content: center;
+                margin-top: 20vh;
+                .cta-btn {
+                    line-height: 2.5rem;
+                    width: 6rem;
+                    font-size: 1rem;
+                    margin: 0 7.5vw;
+                }
+            }
+        }
+    }
+}

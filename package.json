@@ -1,7 +1,6 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "suramprady",
   "version": "1.0.0",
-  "description": "Boilerplate for React-Redux project with hot code reloading",
   "scripts": {
     "start": "node server.js",
     "build": "webpack --config webpack.config.prod.js",

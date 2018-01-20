@@ -1,6 +1,3 @@
-// Redux Action for updating state with latest chart data
-import axios from 'axios';
-
 // Redux ActionTypes for informing reducer which switchcase to perform
 import * as Types from './actionTypes';
 

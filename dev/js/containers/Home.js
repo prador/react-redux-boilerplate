@@ -1,37 +1,57 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Route, BrowserRouter, Link, Redirect, Switch } from 'react-router-dom'
-
-import NewComponent from "../components/NewComponent"
-
-// redux actions for getting equipment and chart data from store and sending state changes
 import * as Actions from '../redux/actions/Actions';
 
-// connecting redux store returned objects as state for component
 const mapStateToProps = state => {
     return {
-        data: state.Reducer
     }
 }
 class Home extends Component {
   constructor(props) {
       super(props);
-      // this.fetchData.bind(this);
-      this.state= {
-        page: "Home"
-      }
-  }
-      
-  // lifecycle method to refresh charts every few seconds with new data
-  componentDidMount() {
-    this.props.dispatch(Actions.initialData(this.state.page));
   }
 
   render() {
     return (
-      <div>
-        <NewComponent pageName={this.props.data.pageName} datata={this.props.data.data.data1}/>
-        <Link to="/NewPage">Goto New Page</Link>
+      <div className="home">
+        <header className="page-header">
+          <div className="container">
+            <Link to="/">Suramprady</Link>
+            {/* <img src="./../images/sign.png"/> */}
+          </div>
+        </header>
+        <section className="hero-section">
+          <div className="container">
+            <div className="hero-bg"></div>
+            <div className="hero-overlay"></div>
+            <div className="hero-content">
+              <div className="hero-header">
+                <p>Hey there! I am <span>Pradyumna Surampudi</span></p>
+                <p>I am a UI/UX Designer from Bangalore</p>
+              </div>
+              <div className="btn-grp">
+                <a className="cta-btn" target="_blank" href="https://drive.google.com/open?id=0B36AyzF1uCWYSEJ5UFBFdXpHbFU"> Resume</a>
+                <a className="cta-btn" target="_blank" href="https://drive.google.com/open?id=1eMhTRrZbkvkMOX33e93kxOFl3cmBgVXK"> Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section className="section-two">
+          <div className="container">
+            <div className="section-two-content">
+              hi
+            </div>
+          </div>
+        </section> */}
+        {/* <nav role="navigation" id="navigation">
+          <div className="nav-container">
+            <div className="nav-link"> Home</div>
+            <div className="nav-link"> About</div>
+            <div className="nav-link"> Work</div>
+            <div className="nav-link"> Contact</div>
+          </div>
+        </nav> */}
       </div>
     )
   }

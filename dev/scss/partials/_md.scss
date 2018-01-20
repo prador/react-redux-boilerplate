@@ -1,0 +1,35 @@
+@media only screen and (min-width: 48em) and (orientation: portrait) {
+    header {
+        height: 7.5vh;
+        a {
+            padding: 1.5vh;
+            font-size: 6vh;
+        }
+    }
+    .hero-section {
+        .hero-bg {
+            background-position: 52% center;
+        }
+        .hero-content {
+            .hero-header {
+                margin-top: 40vh;
+                p {
+                    font-size: 3vh;
+                    span {
+                        font-size: 5vh;
+                    }
+                }
+            }
+            .btn-grp {
+                justify-content: center;
+                margin-top: 30vh;
+                .cta-btn {
+                    line-height: 3rem;
+                    width: 10rem;
+                    font-size: 1.5rem;
+                    margin: 0 7.5vw 0 10vw;
+                }
+            }
+        }
+    }
+}
